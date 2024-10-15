@@ -166,3 +166,8 @@ cython_debug/
 #For IDX
 .idx/
 devserver.sh
+
+
+#For Replit
+.replit
+replit.nix

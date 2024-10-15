@@ -1,0 +1,8 @@
+<div>
+  {% for job in jobs %}
+    <h4>{{job["title"]}}</h4>
+    <p><b> Location: </b> {{job["location"]}}</p>
+    <p><b>Salary: </b>{{job["salary"]}}</p>
+    <hr>
+  {% endfor %}
+</div>
