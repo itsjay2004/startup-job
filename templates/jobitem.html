@@ -1,8 +1,15 @@
-<div>
-  {% for job in jobs %}
-    <h4>{{job["title"]}}</h4>
-    <p><b> Location: </b> {{job["location"]}}</p>
-    <p><b>Salary: </b>{{job["salary"]}}</p>
-    <hr>
-  {% endfor %}
+{% for job in jobs %}
+
+<div class="row">
+  <div class="col-9">
+    <p class="h5">{{ job["title"] }}</p>
+    <p> <b>Location:</b> {{ job["location"] }}</p>
+    <p> <b>Salary:</b> {{ job["salary"] }}</p>
+  </div>
+  <div class="col-3">
+    <button type="button" class="btn btn-info">Apply</button>
+  </div>
 </div>
+<hr>
+
+{% endfor %}
